@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+.list-group .list-group-item {
+  background: #aaa9a9;
+  color: #063146;
+}
+.sidebar-nav {
+  z-index: 1;
+  top: 0;
+  position: absolute;
+  left: -250px;
+  height: 100%;
+  width: 250px;
+  background: #042331;
+  transition: all 0.5s ease;
+}
+.sidebar-nav .header-nav {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  color: white;
+  line-height: 70px;
+  padding-left: 40px;
+  background: #063146;
+  user-select: none;
+}
+.sidebar-nav ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar-nav ul a i {
+  margin-right: 16px;
+}
+#check {
+  display: none;
+}
+label #cancel {
+  position: absolute;
+  /* background: #042331; */
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  /* left: 10px; */
+  /* top: 10px; */
+  font-size: 35px;
+  color: #517a8d;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #517a8d;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar-nav {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ .section {
+  opacity: 0.2;
+}
+/* my custom */
+.card .card-header,
+.card .card-footer {
+  background-color: #042331;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.card .card-body {
+  background-color: #063146;
+}
+.section {
+  margin-top: -24px;
+  /* background-color: #517a8d; */
+  height: 100%;
+  transition: all 0.5s;
+  background-color: #527281;
+}
+.top {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-right: 20px;
+  background-color: #063146;
+}
+.top a {
+  font-size: 38px;
+  color: #dbdbdb;
+}
+.top a:hover {
+  color: #dbdbdb;
+}
+.notif {
+  color: #dbdbdb;
+  margin-left: auto;
+  font-size: 20px;
+}
+.section .container-nav {
+  display: flex;
+  align-items: center;
+  height: 67px;
+  background-color: #042331;
+  color: #dbdbdb;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.point {
+  margin-left: auto;
+}
+.point i {
+  margin-left: 20px;
+}
+.container-nav .point i:hover {
+  transform: scale(1.1);
+}
+.container-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #164861;
+  color: #dbdbdb;
+  border: none;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+}
+.container-nav a:hover {
+  background-color: #4a7388;
+  color: #dbdbdb;
+  transform: scale(0.9);
+}
+@media (min-width: 576px) {
+  .section {
+    margin-top: -24px;
+    overflow-x: hidden;
+  }
+  .sidebar-nav {
+    top: 0;
+    position: absolute;
+    left: -200px;
+    width: 30%;
+    background: #042331;
+    transition: all 0.5s ease;
+  }
+  .sidebar-nav .header-nav {
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+    color: white;
+    line-height: 70px;
+    padding-left: 40px;
+    background: #063146;
+    user-select: none;
+  }
+  .sidebar-nav ul li a {
+    font-size: 1em;
+  }
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #517a8d;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+  }
+  #check:checked ~ label #cancel {
+    display: none;
+  }
+  #check:checked ~ .section {
+    margin-left: 0;
+  }
+  .top a {
+    font-size: 30px;
+    color: #dbdbdb;
+  }
+}
