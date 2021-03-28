@@ -143,6 +143,7 @@ label #cancel {
 .point {
   margin-left: auto;
   position: absolute;
+  right: 0;
 }
 .point i {
   margin-left: 20px;
