@@ -129,6 +129,7 @@ label #cancel {
   font-size: 20px;
 }
 .section .container-nav {
+  position: relative;
   display: flex;
   align-items: center;
   height: 67px;
