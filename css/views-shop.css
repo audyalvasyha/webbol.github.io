@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #5f6368;
+    font-family: sans-serif !important;
+}
+
+/* .wrapper {
+    background-color: #dbdbdb;
+} */
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 5;
+}
+.header-top {
+    height: 60px;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.brand{
+   display: flex;
+}
+
+.top-up {
+   display: flex;
+   align-items: center;
+   margin-right: 1rem;
+   padding: 4px;
+   border: 1px solid #999999;
+   color: #353535;
+   border-radius: 5px;
+   font-size: .9rem;
+}
+
+.header-navigasi {
+    scrollbar-width: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 110px;
+    max-width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    z-index: 5;
+    background-color: #fff;
+    height: 40px;
+    line-height: 12.5px;
+    font-size: 13px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    padding: 0 7px 0 7px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.header-navigasi::-webkit-scrollbar{
+    display: none;
+}
+.header-navigasi ul {
+    width: max-content;
+}
+.header-navigasi ul li {
+    float: left;
+    font-size: 16px;
+    padding: 6px 8px;
+    display: block;
+    text-align: center;
+}
+.header-navigasi ul li a {
+    color: #5f6368;
+}
+.header-navigasi ul li a:focus {
+    color: #535353;
+    font-weight: 500;
+}
+.header-navigasi ul li a:link{
+   background-color: none;
+}
+.header-navigasi ul li a.link-head:focus::after {
+    content: "";
+    border-bottom: 2px solid #535353;
+    width: 60%;
+    display: block;
+    margin-top: 5px;
+}
+
+.header-title {
+    padding-bottom: 12px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: rows;
+}
+.header-title h2{
+    font-weight: 500;
+    margin-left: 4px;
+    margin-top: 5px;
+    color: #535353;
+}
+
+.form-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 65%;
+}
+.form-search .img-search {
+    margin: 0 5px 0 8px;
+}
+.form-search .control {
+    border: none;
+    padding: .5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    color: #6d6d6d;
+    width: 100%;
+}
+
+.icon-navigasi {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.content {
+    margin-top: 155px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .55rem 0 .5rem;
+}
+
+.col {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.card-item {
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.col a {
+    display: block;
+    margin: .5rem;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px #dbdbdb;
+}
+.col a:hover {
+   transform: scale(1.03);
+}
+
+span {
+    display: block;
+    line-height: 1.3rem;
+}
+
+.nm-product {
+    margin: .5rem;
+    color: #70757a;
+    font-size: .9rem
+}
+
+.price {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    margin: .25rem .5rem .5rem;
+    padding-bottom: 10px;
+    color: #535353;
+    font-size: .9rem;
+}
+
+.label {
+   padding: .5rem 1.25rem .75rem 1.25rem;
+   color: #5f6368;
+   font-size: 1.1rem;
+   font-weight: 500;
+}
+
+ul.list-payment {
+    list-style-type: none;
+}
+li.list-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+input[type='radio'] {
+    margin-left: auto;
+}
+
+.fixed-footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 1px solid #dbdbdb;
+}

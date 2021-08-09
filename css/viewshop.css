@@ -1,0 +1,437 @@
+/* Warna Root Website */
+/* 
+    - fontColor: #5f6368
+    - backgroundWrapper: #ebebeb;
+    - containerColor: #ffffff;
+
+*/
+
+* {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4c4d4e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+.pt-2 {
+    padding: 1rem 0 0;
+}
+
+i.fas {
+    font-size: 20px;
+    color: rgb(82, 88, 103);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
+.container .body-container {
+    background: url(https://images.tokopedia.net/img/cache/240/PYbRbC/2021/8/7/c640aa5e-dcad-44b3-883a-5ace4c4b2e5c.png.webp?ect=4g);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #47a651;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.container .label-tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 1rem;
+    font-size: 15px;
+    color: #31353b;
+    font-weight: 600;/* ini style label */
+}
+.container .label-tag span:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    color: #03ac0e;
+}
+
+.container .body-desc {
+    max-height: 125px;
+    margin: 0 1rem;
+    overflow-y: hidden;
+}
+
+.container .body-pay {
+    margin: 10px 1rem;
+    display: flex;
+    align-items: center;
+}
+.container .body-pay span{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 15px;
+}
+.container .body-pay p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.body-pay .pay {
+    width: 100%;
+    height: 40px;
+    background-color: #689f38;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.container .body-sum {
+    margin: 0 1rem 15px;
+}
+.container .body-sum .list-detail {
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .agree {
+    padding: 8px 1rem 0 1rem;
+    font-size: 10px;
+    display: flex;
+}
+
+.container .footer-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 1rem;
+    box-shadow: 0px -20px 40px #fff;
+}
+input#check {
+    display: none;
+}
+input#check:checked ~ .body-desc {
+    max-height: max-content;
+}
+input#check:checked ~ .footer-desc {
+    box-shadow: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1rem 15px 1rem;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px;
+}
+
+.col {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.side {
+    flex-direction: row;
+    margin: 15px 1rem;
+}
+
+.item {
+    margin: 0 5px 1rem;
+}
+.item img {
+    border-radius: 12px;
+}
+
+/* View website */
+
+.wrapper {
+    background-color: #f5f4f5;
+}
+
+/* Header Navigasi */
+.header-top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    outline: rgb(218, 226, 237) solid 1px;
+}
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    margin: 50px 0 0;
+    background-color: #ffffff;
+}
+/* 
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    background-color: #ffffff;
+    outline: rgb(218, 226, 237) solid 1px;
+} */
+
+/* Content Top */
+.side-left {
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+.side-right {
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+.title-item{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.label.for {
+    display: flex;
+    align-items: center;
+}
+.label.for span {
+    margin-left: 8px;
+}
+.label.studio {
+    color: #616161;
+    font-size: 14px;
+    font-weight: 400;
+    height: 21px;
+    margin: 2px 0;
+    word-spacing: 12px;
+}
+.nm-studio, .catg {
+    color: #33691e;
+    font-weight: 700;
+    word-spacing: normal;
+}
+
+.label.rate {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    height: 18px;
+}
+i.star {
+    font-size: 10px;
+    color: #737373;
+    width: 16px;
+    margin-bottom: 3px;
+}
+i.user {
+    font-size: 10px;
+    color: #737373;
+    width: 16px;
+    margin: 0 0 3px 24px;
+}
+.price .val {
+    height: 36px;
+    padding: 0 20px;
+    line-height: 36px;
+    background-color: #689f38;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.durasi {
+    list-style-type: none;
+    display: flex;
+    margin: 0 0 15px 0;
+}
+.item-durasi {
+    padding: 0 14px;
+    margin: 0 10px 0 0;
+    height: 35px;
+    border-radius: 16px;
+    outline: none;
+    background-color: #eeeeee;
+    border: 1px solid #dbdbdb;
+}
+.item-durasi:focus {
+    border: 1px solid #03ac0e;
+    color: #03ac0e;
+}
+.item-durasi.premium {
+    color: #ef144a;
+}
+
+/* Page Home */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: rgb(218, 226, 237) solid 1px;
+    border-radius: 5px;
+    padding: 0 2px;
+}
+.search-box .fa-search {
+    margin: 0 8px;
+    font-size: 15px;
+    color: #838383;
+}
+.far {
+    font-size: 20px;
+    color: #838383;
+}
+input.search-input {
+    height: 30px;
+    outline: none;
+    font-size: 14px;
+    border: none;
+}
+input.search-input::-webkit-input-placeholder {
+    color: #979797;
+    font-weight: 400;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.account i {
+    font-weight: 400;
+    color: #969696;
+}
+.account .account-picture i {
+    font-size: 15px;
+    border: #969696 solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.account .account-name {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 90px;
+    border: rgb(218, 226, 237) solid 1px;
+    border-radius: 5px;
+    margin: 8px 0 8px auto;
+}
+.top-up .fa-usd-circle {
+    color: orange;
+    font-size: 16px;
+}
+
+.header-navigasi, .bonus-new {
+    scrollbar-width: none;
+    max-width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
+    background-color: #fff;
+    line-height: 25px;
+    scroll-behavior: smooth;
+    padding: 0 7px 0 7px;
+    outline: rgb(218, 226, 237) solid 1px;
+}
+.header-navigasi::-webkit-scrollbar{
+    display: none;
+}
+.header-navigasi ul {
+    width: max-content;
+}
+.header-navigasi ul li {
+    float: left;
+    font-size: 12px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.header-navigasi ul li a {
+    margin: 2px 0 0 8px;
+    color: #5f6368;
+}
+.header-navigasi ul li i {
+    font-size: 13px;
+}
+.header-navigasi ul li a:focus {
+    color: #535353;
+    font-weight: 500;
+}
+.header-navigasi ul li a:link{
+   background-color: none;
+}
+.header-navigasi ul li a.link-head:focus::after {
+    content: "";
+    border-bottom: 2px solid #535353;
+    width: 60%;
+    display: block;
+    margin-top: 5px;
+}
+.header-navigasi ul li.link-item {
+    flex-direction: column;
+    margin: 0 10px 0 0;
+    max-height: 190px;
+    padding: 0;
+    border-radius: 10px;
+}
+.link-item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.body-card {
+    width: 100%;
+    padding: .3rem;
+}
+.body-card .harga {
+    line-height: 16px;
+    font-size: .65rem;
+    font-weight: 500;
+}
+.body-card .diskon span {
+    line-height: 9px;
+    font-size: .5rem;
+    font-weight: 500;
+    color: #fd1c1c;
+    background-color: #e4c2c2;
+    padding: 3px;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    border-radius: 3px;
+}
